@@ -1,7 +1,0 @@
-C:\Users\Nico\Desktop\tp_laboratorio_2\Entidades\Entidades2\bin\Debug\Entidades2.exe.config
-C:\Users\Nico\Desktop\tp_laboratorio_2\Entidades\Entidades2\bin\Debug\Entidades2.exe
-C:\Users\Nico\Desktop\tp_laboratorio_2\Entidades\Entidades2\bin\Debug\Entidades2.pdb
-C:\Users\Nico\Desktop\tp_laboratorio_2\Entidades\Entidades2\obj\Debug\Entidades.csprojAssemblyReference.cache
-C:\Users\Nico\Desktop\tp_laboratorio_2\Entidades\Entidades2\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
-C:\Users\Nico\Desktop\tp_laboratorio_2\Entidades\Entidades2\obj\Debug\Entidades2.exe
-C:\Users\Nico\Desktop\tp_laboratorio_2\Entidades\Entidades2\obj\Debug\Entidades2.pdb
