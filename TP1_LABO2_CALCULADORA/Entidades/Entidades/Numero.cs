@@ -75,10 +75,24 @@ namespace Entidades
         /// <returns></returns>
         public string BinarioDecimal(string binario)
         {
-            string resultado = "Valor inválido";
+            string resultado = string.Empty;
             if (EsBinario(binario))
             {
-                resultado = Convert.ToInt32(binario, 2).ToString();
+                char[] binarioArray = binario.ToCharArray();
+                Array.Reverse(binarioArray);
+                int resultadoDecimal = 0;
+                for (int i = 0; i < binarioArray.Length; i++)
+                {
+                    if (binarioArray[i].Equals('1'))
+                    {
+                        resultadoDecimal += (int)Math.Pow(2, i);
+                    }
+                }
+                resultado = resultadoDecimal.ToString();
+            }
+            else
+            {
+                resultado = "Valor inválido";
             }
             return resultado;
         }
@@ -90,11 +104,21 @@ namespace Entidades
         /// <returns></returns>
         public string DecimalBinario(double numero)
         {
-            string resultado = "Valor inválido";
+            string resultado = string.Empty;
             int absNumero = (int)Math.Abs(numero);
             if (absNumero > 0)
             {
-                resultado = Convert.ToString(absNumero, 2);
+                int resto;
+                while (absNumero >= 1)
+                {
+                    resto = absNumero % 2;
+                    absNumero /= 2;
+                    resultado = resto.ToString() + resultado;
+                }
+            }
+            else
+            {
+                resultado = "Valor inválido";
             }
             return resultado;
         }
