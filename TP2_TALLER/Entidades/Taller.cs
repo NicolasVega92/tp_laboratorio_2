@@ -19,10 +19,17 @@ namespace Entidades
         }
 
         #region "Constructores"
+        /// <summary>
+        /// constructor que instancia la Lista VEHICULOS
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
+        /// <summary>
+        /// Constructor que crea los espaciosDisponibles
+        /// </summary>
+        /// <param name="espacioDisponible"></param>
         public Taller(int espacioDisponible) :this()
         {
             this.espacioDisponible = espacioDisponible;

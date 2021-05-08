@@ -11,6 +11,7 @@ namespace Entidades
     /// </summary>
     public abstract class Vehiculo
     {
+        #region Propiedades
         public enum EMarca
         {
             Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
@@ -24,6 +25,15 @@ namespace Entidades
         private EMarca marca;
         private string chasis;
         private ConsoleColor color;
+        #endregion
+
+        #region Metodos
+        /// <summary>
+        /// Constructor Vehiculo
+        /// </summary>
+        /// <param name="chasis"></param>
+        /// <param name="marca"></param>
+        /// <param name="color"></param>
         public Vehiculo(string chasis, EMarca marca, ConsoleColor color )
         {
             this.chasis = chasis;
@@ -43,7 +53,10 @@ namespace Entidades
         {
             return (string)this;
         }
-
+        /// <summary>
+        /// Crea un string con los datos del vehiculo recibido como parametro
+        /// </summary>
+        /// <param name="p"></param>
         public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
@@ -52,7 +65,6 @@ namespace Entidades
             sb.AppendFormat("MARCA : {0}\r\n", p.marca.ToString());
             sb.AppendFormat("COLOR : {0}\r\n", p.color.ToString());
             sb.AppendLine("---------------------");
-
             return sb.ToString();
         }
 
@@ -76,5 +88,6 @@ namespace Entidades
         {
             return !(v1.chasis == v2.chasis);
         }
+        #endregion
     }
 }
