@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades.Enumerados;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace Entidades
     {
         #region Atributos
         private int cantidad;
-        private string calidad;
+        private ECalidad calidad;
         private EColorMaterial color;
         private EProceso proceso;
         #endregion
@@ -21,7 +22,7 @@ namespace Entidades
             get { return this.cantidad; }
             set { this.cantidad = value; }
         }
-        public string Calidad
+        public ECalidad Calidad
         {
             get { return this.calidad; }
             set { this.calidad = value; }
@@ -39,7 +40,7 @@ namespace Entidades
         #endregion
 
         #region Metodos
-        protected MateriaPrima(int cantidad, string calidad, EColorMaterial color, EProceso proceso)
+        protected MateriaPrima(int cantidad, ECalidad calidad, EColorMaterial color, EProceso proceso)
         {
             this.cantidad = cantidad;
             this.calidad = calidad;
@@ -70,6 +71,7 @@ namespace Entidades
         {
             return !(materia1 == materia2);
         }
+
         #endregion
 
     }

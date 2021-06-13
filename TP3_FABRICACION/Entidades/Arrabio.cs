@@ -1,4 +1,5 @@
-﻿using Entidades.Interfaz;
+﻿using Entidades.Enumerados;
+using Entidades.Interfaz;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,11 @@ namespace Entidades
     {
         private string empresaOrigen;
 
-        public Arrabio(int cantidad, string calidad, EColorMaterial color, EProceso proceso)
+        public Arrabio(int cantidad, ECalidad calidad, EColorMaterial color, EProceso proceso)
             : this("SIN REFERENCIA", cantidad, calidad, color, proceso)
         {
         }
-        public Arrabio(string empresaOrigen, int cantidad, string calidad, EColorMaterial color, EProceso proceso)
+        public Arrabio(string empresaOrigen, int cantidad, ECalidad calidad, EColorMaterial color, EProceso proceso)
             : base(cantidad, calidad, color, proceso)
         {
             this.empresaOrigen = empresaOrigen;
@@ -29,6 +30,7 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Arrabio");
             sb.AppendLine($"Empresa proveniente = {EmpresaOrigen}");
             sb.Append(base.ToString());
             return sb.ToString();
