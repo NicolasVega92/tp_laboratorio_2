@@ -32,7 +32,6 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Arrabio");
             sb.Append(base.ToString());
-            sb.AppendLine($"La ganancia estimada es de {Ganancia}");
             return sb.ToString();
         }
         /// <summary>

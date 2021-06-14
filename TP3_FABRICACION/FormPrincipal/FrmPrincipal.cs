@@ -269,7 +269,7 @@ namespace FormPrincipal
         /// <param name="e"></param>
         private void btnExportar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(listaMensajes.Count().ToString());
+            MessageBox.Show("Se han creado los archivos correspondientes", "EXPORTAR INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
             foreach (Mensaje item in listaMensajes)
             {
                 item.GuardarTxt();
