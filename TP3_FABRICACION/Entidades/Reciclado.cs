@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Reciclado : MateriaPrima, IMaterial
+    public class Reciclado : MateriaPrima, IMaterial<Reciclado>
     {
         /// <summary>
         /// Constructor de Reciclado con todos los parametros
@@ -48,10 +48,10 @@ namespace Entidades
         /// Calcula la ganancia dependiendo la cantidad de dicho material
         /// </summary>
         /// <returns></returns>
-        public float CalcularGanancia()
+        public float CalcularGanancia(Reciclado material)
         {
             float ganancia = 0;
-            switch(this.Calidad)
+            switch(material.Calidad)
             {
                 case ECalidad.Malo:
                     {
@@ -72,14 +72,18 @@ namespace Entidades
             return ganancia;
         }
         /// <summary>
-        /// Retorna la ganancia calculada
+        /// Retorna true si el material es de calidad Excelente
         /// </summary>
-        public override float Ganancia
+        /// <param name="material"></param>
+        /// <returns></returns>
+        public bool EsValioso(Reciclado material)
         {
-            get
+            bool retorno = false;
+            if(material.Calidad == ECalidad.Excelente)
             {
-                return this.CalcularGanancia();
+                retorno = true;
             }
+            return retorno;
         }
     }
 }

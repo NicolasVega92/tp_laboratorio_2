@@ -16,7 +16,6 @@ namespace Entidades
         private int cantidad;
         private ECalidad calidad;
         private EColorMaterial color;
-        public abstract float Ganancia { get; }
         #endregion
 
         #region Propiedades

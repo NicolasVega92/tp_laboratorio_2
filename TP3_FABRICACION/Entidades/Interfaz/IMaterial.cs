@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades.Interfaz
 {
-    interface IMaterial
+    interface IMaterial<T>
     {
-        float CalcularGanancia();
+        float CalcularGanancia(T material);
+        bool EsValioso(T material);
     }
 }

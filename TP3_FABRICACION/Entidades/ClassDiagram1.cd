@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Entidades.Arrabio" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+  <Class Name="Entidades.Arrabio">
+    <Position X="2.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAgAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAgAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Arrabio.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Entidades.MateriaPrima" Collapsed="true">
-    <Position X="1.75" Y="0.5" Width="1.5" />
+  <Class Name="Entidades.MateriaPrima">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AUAAAAEAAAAAKAAEACgAAAAAAAAAAACCAAAAggBAAiA=</HashCode>
       <FileName>MateriaPrima.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Entidades.Reciclado" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+  <Class Name="Entidades.Reciclado">
+    <Position X="2.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAAAAAAgAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAgAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Reciclado.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -30,10 +30,10 @@
       <FileName>Stock.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Entidades.Interfaz.IMaterial" Collapsed="true">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+  <Interface Name="Entidades.Interfaz.IMaterial&lt;T&gt;">
+    <Position X="5.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Interfaz\IMaterial.cs</FileName>
     </TypeIdentifier>
   </Interface>
