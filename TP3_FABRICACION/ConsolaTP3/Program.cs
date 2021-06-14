@@ -12,20 +12,20 @@ namespace ConsolaTP3
     {
         static void Main(string[] args)
         {
-            Arrabio arrabio                     = new Arrabio("Ushuahia", 1000, ECalidad.Excelente, EColorMaterial.Azul, EProceso.SinOperar);
-            Arrabio arrabioIgual                = new Arrabio("Ushuahia", 1000, ECalidad.Excelente, EColorMaterial.Azul, EProceso.SinOperar);
-            Reciclado reciblado                 = new Reciclado("BuenosAires", 200, ECalidad.Bueno, EColorMaterial.Descolorido, EProceso.AltoHorno);
-            Arrabio arrabioMismosDatosReciclado = new Arrabio("BuenosAires", 200, ECalidad.Bueno, EColorMaterial.Descolorido, EProceso.AltoHorno);
-            Reciclado recibladoIgual            = new Reciclado("BuenosAires", 200, ECalidad.Malo, EColorMaterial.Descolorido, EProceso.AltoHorno);
-            Reciclado recibladoOtro             = new Reciclado("Cordoba", 400, ECalidad.Malo, EColorMaterial.Rojo, EProceso.CorteConGas);
+            Arrabio arrabio                     = new Arrabio(EProceso.SinOperar, "Arrabio", "Ushuahia", 1000, ECalidad.Excelente, EColorMaterial.Azul);
+            Arrabio arrabioIgual                = new Arrabio(EProceso.SinOperar, "Arrabio", "Ushuahia", 1000, ECalidad.Excelente, EColorMaterial.Azul);
+            Reciclado reciclado                 = new Reciclado(EProceso.CorteConGas, "Reciclado", "CABA", 333, ECalidad.Excelente, EColorMaterial.Rojo);
+            Arrabio arrabioMismosDatosReciclado = new Arrabio(EProceso.CorteConGas, "Arrabio", "CABA", 333, ECalidad.Excelente, EColorMaterial.Rojo);
+            Reciclado recicladoIgual = new Reciclado(EProceso.CorteConGas, "Reciclado", "CABA", 333, ECalidad.Excelente, EColorMaterial.Rojo);
+            Reciclado recicladoOtro = new Reciclado(EProceso.Laminada, "Reciclado", "Ushuahia", 222, ECalidad.Malo, EColorMaterial.Descolorido);
 
             Stock stock = new Stock("Lista");
             stock = stock + arrabio;
             stock = stock + arrabioIgual;   //NO SE DEBERIA SUMAR
             stock = stock + arrabioMismosDatosReciclado; //con diferente tipo de dato 
-            stock = stock + reciblado;
-            stock = stock + recibladoIgual; //NO SE DEBERIA SUMAR
-            stock = stock + recibladoOtro;
+            stock = stock + reciclado;
+            stock = stock + recicladoIgual; //NO SE DEBERIA SUMAR
+            stock = stock + recicladoOtro;
             Console.WriteLine(stock.ListaDeMateriales.Count);
             foreach (MateriaPrima item in stock.ListaDeMateriales)
             {

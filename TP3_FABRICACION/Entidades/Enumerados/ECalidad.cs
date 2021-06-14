@@ -1,9 +1,12 @@
 ﻿namespace Entidades.Enumerados
 {
+    /// <summary>
+    /// Enumerador de los tipos de calidad
+    /// </summary>
     public enum ECalidad
     {
-        Malo = 6,
-        Bueno = 7,
-        Excelente = 8
+        Malo,
+        Bueno,
+        Excelente
     }
 }

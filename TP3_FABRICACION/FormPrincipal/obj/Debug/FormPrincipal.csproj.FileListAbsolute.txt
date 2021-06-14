@@ -11,3 +11,5 @@ C:\Users\Nico\Desktop\tp_laboratorio_2\TP3_FABRICACION\FormPrincipal\obj\Debug\F
 C:\Users\Nico\Desktop\tp_laboratorio_2\TP3_FABRICACION\FormPrincipal\obj\Debug\FormPrincipal.csproj.CopyComplete
 C:\Users\Nico\Desktop\tp_laboratorio_2\TP3_FABRICACION\FormPrincipal\obj\Debug\FormPrincipal.exe
 C:\Users\Nico\Desktop\tp_laboratorio_2\TP3_FABRICACION\FormPrincipal\obj\Debug\FormPrincipal.pdb
+C:\Users\Nico\Desktop\tp_laboratorio_2\TP3_FABRICACION\FormPrincipal\bin\Debug\Serializable.dll
+C:\Users\Nico\Desktop\tp_laboratorio_2\TP3_FABRICACION\FormPrincipal\bin\Debug\Serializable.pdb

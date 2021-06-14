@@ -8,7 +8,6 @@ namespace Entidades.Interfaz
 {
     interface IMaterial
     {
-        bool Equals(Object obj);
-        string ToString();
+        float CalcularGanancia();
     }
 }

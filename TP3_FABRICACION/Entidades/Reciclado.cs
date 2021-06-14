@@ -10,34 +10,76 @@ namespace Entidades
 {
     public class Reciclado : MateriaPrima, IMaterial
     {
-        private string basuralOrigen;
-
-        public Reciclado(int cantidad, ECalidad calidad, EColorMaterial color, EProceso proceso) 
-            : this("SIN REFERENCIA", cantidad, calidad, color, proceso)
+        /// <summary>
+        /// Constructor de Reciclado con todos los parametros
+        /// </summary>
+        /// <param name="proceso"></param>
+        /// <param name="material"></param>
+        /// <param name="origen"></param>
+        /// <param name="cantidad"></param>
+        /// <param name="calidad"></param>
+        /// <param name="color"></param>
+        public Reciclado(EProceso proceso, string material, string origen, int cantidad, ECalidad calidad, EColorMaterial color)
+            : base(proceso, material, origen, cantidad, calidad, color)
         {
         }
-        public Reciclado(string basuralOrigen, int cantidad, ECalidad calidad, EColorMaterial color, EProceso proceso)
-            : base(cantidad, calidad, color, proceso)
-        {
-            this.basuralOrigen = basuralOrigen;
-        }
-
-        public string BasuralOrigen
-        {
-            get { return this.basuralOrigen; }
-            set { this.basuralOrigen = value; }
-        }
+        /// <summary>
+        /// Sobreescritura del metodo ToString()
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Material Reciclado");
-            sb.AppendLine($"Basural proveniente = {BasuralOrigen}");
             sb.Append(base.ToString());
+            sb.AppendLine($"La ganancia estimada es de {Ganancia}");
             return sb.ToString();
         }
+        /// <summary>
+        /// Sobreescritura del metodo Equals()
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             return obj is Reciclado;    
+        }
+        /// <summary>
+        /// Calcula la ganancia dependiendo la cantidad de dicho material
+        /// </summary>
+        /// <returns></returns>
+        public float CalcularGanancia()
+        {
+            float ganancia = 0;
+            switch(this.Calidad)
+            {
+                case ECalidad.Malo:
+                    {
+                        ganancia = base.Cantidad * (float)0.6;
+                        break;
+                    }
+                case ECalidad.Bueno:
+                    {
+                        ganancia = base.Cantidad * (float)0.7;
+                        break;
+                    }
+                case ECalidad.Excelente:
+                    {
+                        ganancia = base.Cantidad * (float)0.8;
+                        break;
+                    }
+            }
+            return ganancia;
+        }
+        /// <summary>
+        /// Retorna la ganancia calculada
+        /// </summary>
+        public override float Ganancia
+        {
+            get
+            {
+                return this.CalcularGanancia();
+            }
         }
     }
 }
