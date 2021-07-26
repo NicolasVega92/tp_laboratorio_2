@@ -26,9 +26,9 @@ namespace FormPrincipal
         public event Botones okEditarEventHandler;
         public event Botones okEditarDeshabilitarEventHandler;
 
+        Thread threadIniciador;
         Thread thread; //creo el hilo
         public delegate void Callback(string lista);
-        Thread threadIniciador;
 
         /// <summary>
         /// Constructor del FrmPrincipal

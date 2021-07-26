@@ -46,9 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{40FA2202-5003-4779-B24E-059717787124}</Project>
       <Name>Entidades</Name>
