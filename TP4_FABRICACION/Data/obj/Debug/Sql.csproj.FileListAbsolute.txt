@@ -1,0 +1,9 @@
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\bin\Debug\Data.dll
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\bin\Debug\Data.pdb
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\bin\Debug\Entidades.dll
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\bin\Debug\Entidades.pdb
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\obj\Debug\Sql.csproj.AssemblyReference.cache
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\obj\Debug\Sql.csproj.CoreCompileInputs.cache
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\obj\Debug\Sql.csproj.CopyComplete
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\obj\Debug\Data.dll
+C:\Users\Nico\Desktop\TP4_FABRICACION\Data\obj\Debug\Data.pdb
