@@ -1,0 +1,30 @@
+﻿namespace Entidades
+{
+    public enum EOrigen
+    {
+        BuenosAires,
+        CapitalFederal,
+        Catamarca,
+        Chaco,
+        Chubut,
+        Córdoba,
+        Corrientes,
+        EntreRíos,
+        Formosa,
+        Jujuy,
+        LaPampa,
+        LaRioja,
+        Mendoza,
+        Misiones,
+        Neuquén,
+        RíoNegro,
+        Salta,
+        SanJuan,
+        SanLuis,
+        SantaCruz,
+        SantaFe,
+        SantiagoDelEstero,
+        TierraDelFuego,
+        Tucumán
+    }
+}
